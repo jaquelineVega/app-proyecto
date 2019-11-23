@@ -1,7 +1,7 @@
 
 <div class="card-columns m-3">
     <div class="card" *ngFor="let item of paises">
-      <img src="assets/img/productos/{{item.codigo}}.jpg" class="card-img-top" alt="...">
+      <img [src]="item.flag" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{item.name}}</h5>
         <p class="card-text">Categoria: {{item.capital}}</p>

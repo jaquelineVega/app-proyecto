@@ -8,15 +8,10 @@ import { PaisesService } from 'src/app/services/paises.service';
 })
 export class AboutComponent implements OnInit {
 
-   //declaracion de variables
-   paises : any;
   
-   constructor(private PaisesSvc: PaisesService) 
+   constructor() 
    {
-       this.PaisesSvc.getPaises().subscribe((data:any)=>
-       {
-         this.paises = data;
-       })
+    
    }
  
   ngOnInit() {

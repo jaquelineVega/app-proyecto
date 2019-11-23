@@ -4,8 +4,8 @@ import { observable, Observable } from 'rxjs';
 import { ProductModel } from '../models/models';
 
 //Variable donde se guarda la URL de json o bd
-const ENDPOINT_URL_PRODUCTS ='assets/data/productos.json';
-//const ENDPOINT_URL_PRODUCTS ='https://mi-proyecto-873d7.firebaseio.com/productos'
+//const ENDPOINT_URL_PRODUCTS ='assets/data/productos.json';
+const ENDPOINT_URL_PRODUCTS ='https://mi-proyecto-873d7.firebaseio.com/.json'
 
 @Injectable({providedIn: 'root'})
 export class ProductsService {
