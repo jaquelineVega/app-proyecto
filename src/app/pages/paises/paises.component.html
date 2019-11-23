@@ -1,0 +1,14 @@
+
+<div class="card-columns m-3">
+    <div class="card" *ngFor="let item of paises">
+      <img src="assets/img/productos/{{item.codigo}}.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">Categoria: {{item.capital}}</p>
+        <p class="card-text">Provedor: {{item.population}}</p>
+        <p *ngFor="let languages of item.languages" class="card-text">{{languages.name}}</p>
+        <p *ngFor="let currencies of item.currencies" class="card-text">{{currencies.code}}</p>
+           
+      </div>
+    </div>
+  </div>

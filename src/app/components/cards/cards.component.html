@@ -1,0 +1,15 @@
+<div class="card-columns">
+    <div class="card" *ngFor="let item of productsList">
+      <img src="assets/img/productos/{{item.codigo}}.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.descripcion}}</h5>
+        <p class="card-text">Categoria: {{item.categoria}}</p>
+        <p class="card-text">Provedor: {{item.proveedor}}</p>
+        <p class="font-weight-bold text-danger">$ {{item.precio | number}}</p>
+        <button class="btn btn-primary" (click)="verDetalle(item.codigo)">Ver producto</button>
+        <br><br>
+        <button class="btn btn-primary"[routerLink]="['/carrito']" routerLinkActive="router-link-active">Agregar al carrito</button>
+      
+      </div>
+    </div>
+  </div>

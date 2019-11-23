@@ -1,0 +1,21 @@
+<div class="jumbotron m-3">
+    <h1 class="display-4">Acerca de nosotros</h1>
+    <p class="lead">Este es mi proyecto de tecnologias Web</p>
+    <hr class="my-4">
+    <p>Proyecto para la Maestria en tecnologiass web y diapositivos moviles. </p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Productos</a>
+  </div>
+
+  <div class="card-columns">
+    <div class="card" *ngFor="let item of paises">
+      <img src="item.flag" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">País: {{item.name}}</h5>
+        <p class="card-text">Capital: {{item.capital}}</p>
+        <p class="card-text">Poblacion: {{item.population}}</p>
+        <p *ngFor="let languages of item.languages" class="card-text">Idioma: {{languages.name}}</p>
+        <p *ngFor="let currencies of item.currencies" class="card-text">{{currencies.code}}</p>
+           
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,12 @@
+<div class="card-columns">
+  <div class="card" *ngFor="let item of DatosProducto">
+    <img src="assets/img/productos/{{item.codigo}}.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.descripcion}}</h5>
+      <p class="card-text">Categoria: {{item.categoria}}</p>
+      <p class="card-text">Provedor_ {{item.provedor}}</p>
+      <p class="card-text">$ {{item.precio | number}}</p>
+      <a class="btn btn-primary btn-lg" [routerLink]="['/products']" routerLinkActive="router-link-active"  role="button">Ver mas productos</a>
+    </div>
+  </div>
+</div>
